@@ -1,0 +1,121 @@
+/**index.wxss**/
+
+.userheader {
+  width: 100%;
+  height: 120px;
+  /* background-color: #ccc; *//* height: 200px; */
+  position: relative;
+}
+
+.mybg {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  z-index: -1;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 130rpx;
+  height: 130rpx;
+  margin: 20rpx;
+  border: 3px solid #eee;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #000;
+}
+
+.content {
+  width: 95%;
+  /* width: 100%; */
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+}
+
+.myArticleTop {
+  margin-top: 10px;
+  font-size: 13px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.topLeft{
+  font-weight: bold;
+}
+
+.myArticelList{
+  width: 100%;
+  /* height: 120px; */
+  /* background-color: pink; */
+}
+
+.articleItem{
+  width: 100%;
+  align-items: center;
+  margin-left: 1px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom:1px solid #eee;  
+  font-size: 12px;
+}
+
+.articleImg{
+  width: 120px;
+  height: 110px;
+  background-color: #ccc;
+  position: relative;
+}
+
+.myArticleImg{
+  width: 120px;
+  height: 110px;
+  position: absolute;
+}
+
+.articleInfor{
+  width: 170px;
+  height: 110px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title{
+  width: 160px;
+  height: 18px;
+  overflow: hidden;
+ font-size: 13px;
+ font-weight: bold;
+ color: #333;
+}
+
+.myContent{
+  width: 160px;
+  height: 65px;
+  overflow: hidden;
+  color: #999;
+}
+
+.touristor{
+  width: 160px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #333;
+  font-size: 12px;
+}
+

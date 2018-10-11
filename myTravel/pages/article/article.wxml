@@ -1,0 +1,43 @@
+<!--pages/article/article.wxml-->
+<view class='container'>
+  <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" /> </swiper-item>
+    </block>
+  </swiper>
+  <view class='page_row' bindtap="suo">
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='20' type='search'></icon>
+        <input class="" placeholder="请输入关键字" value="{{searchValue}}" /> </view>
+    </view>
+    <view class='sousuo'>搜索</view>
+  </view>
+  <view class='articleContent'>
+    <view class='articleContent_top'>
+      <text class='topItem active'>精品推荐</text>
+      <text class='topItem'>热门推荐</text>
+      <text class='topItem'>最新游记</text>
+    </view>
+    <block wx:for="{{article}}" wx:key="unique">
+      <view class='articleItem'>
+        <view class='articleImg'>
+          <image class='myArticleImg' src='{{item.picture}}'></image>
+        </view>
+        <view class='articleInfor'>
+           <view class='title'>
+           <text>{{item.articlename}}</text>
+           </view>
+           <view class='myContent'> <text>{{item.content}} </text></view>
+           <view class='touristor'>
+           <text class='name'>游客：{{item.nickname}}</text>
+           <text class='num'>浏览人数：30</text>
+           </view>
+        </view>
+      </view>
+    </block>
+    
+  </view>
+
+</view>

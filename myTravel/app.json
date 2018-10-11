@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/article/article",
+    "pages/myPage/myPage"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#00c07b",
+    "navigationBarTitleText": "旅游直通车",
+    "navigationBarTextStyle":"#000",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 80
+  },
+  "tabBar": {
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/article/article",
+        "text": "主页",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home_selected.png"
+      },
+     
+      {
+        "pagePath": "pages/myPage/myPage",
+        "text": "我的",
+        "iconPath": "./images/yh.png",
+        "selectedIconPath": "./images/yh_selected.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}
